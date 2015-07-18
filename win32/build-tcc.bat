@@ -16,7 +16,7 @@ echo>..\config.h #define TCC_VERSION "%VERSION%"
 :x86_64
 @set target=-DTCC_TARGET_PE -DTCC_TARGET_X86_64
 @rem mingw 64 has an ICE with -Os
-@set CC=x86_64-pc-mingw32-gcc -O0 -s -fno-strict-aliasing
+@set CC=x86_64-w64-mingw32-gcc -O0 -s -fno-strict-aliasing
 @set P=64
 @goto tools
 
